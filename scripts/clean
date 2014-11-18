@@ -2,4 +2,4 @@
 
 cd $(dirname $0)/..
 
-rm -rf content-home/node-services/node_modules
+rm -rf content-home/node-services/node_modules build dist
