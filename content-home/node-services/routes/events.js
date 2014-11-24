@@ -58,7 +58,9 @@ function exec(name, event, cb) {
 }
 
 router.post('/', function(req, res, next) {
-  if ( ! req.is('json') || ! req.body.name || token != req.query.token ) {
+  // Disable token checking
+  // if ( ! req.is('json') || ! req.body.name || token != req.query.token ) {
+  if ( ! req.is('json') || ! req.body.name ) {
     return next();
   }
 
