@@ -9,7 +9,7 @@ rm -rf dist/artifacts
 mkdir -p build/${CONTENT}
 mkdir -p dist/artifacts
 
-cp -rf apply.sh content content-home build/${CONTENT}
+cp -rf apply.sh build/${CONTENT}
 
 cd build
 
