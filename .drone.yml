@@ -1,3 +1,7 @@
-image: rancher/docker-dind-base:latest
-script:
-  - ./scripts/ci
+---
+pipeline:
+  build:
+    privileged: true
+    image: rancher/docker-dind-base:latest
+    commands:
+      - ./scripts/ci
